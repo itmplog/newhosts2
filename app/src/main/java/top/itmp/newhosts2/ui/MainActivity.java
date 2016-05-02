@@ -82,6 +82,7 @@ public class MainActivity extends BaseActivity {
     private static class ColorPagerAdapter extends PagerAdapter {
         private ArrayList<Pair<String, Integer>> mEntries = new ArrayList<>();
 
+        @SuppressWarnings("unchecked")
         public void add(String title, int color) {
             mEntries.add(new Pair(title, color));
         }
